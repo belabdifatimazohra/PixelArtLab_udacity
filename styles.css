@@ -1,25 +1,27 @@
 body {
   text-align: center;
+  color: #ffffff;
+  background-color: rgb(20, 6, 1);
 }
 
 h1 {
   font-family: Monoton;
   font-size: 70px;
   margin: 0.2em;
+  padding: 10px;
 }
 
 h2 {
   margin: 1em 0 0.25em;
+  padding: 10px;
 }
 
 h2:first-of-type {
   margin-top: 0.5em;
 }
 
-table,
-tr,
-td {
-  border: 1px solid black;
+table, tr, td {
+  border: 1px solid #ffffff;
 }
 
 table {
@@ -37,4 +39,31 @@ td {
 
 input[type="number"] {
   width: 6em;
+}
+
+.rounded {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: auto;
+  border: none;
+}
+
+[type="color"] {
+  border: 0;
+  padding: 0;
+  width: 200%;
+  height: 200%;
+  cursor: pointer;
+  border: none;
+  color: #c0c0b5;
+  transform: translate(-25%, -25%)
+}
+
+.canvasDiv {
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+  border: 2px solid #fa7d09;
 }
