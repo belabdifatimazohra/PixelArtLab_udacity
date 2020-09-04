@@ -17,6 +17,9 @@ function makeGrid() {
     var rows = inputHeight.value;
     var table = "";
 
+    var element = document.getElementById("canvas");
+    element.classList.add("canvasDiv");
+
     for (x = 0; x < rows; x++) {
         table += "<tr>";
         for (y = 0; y < cols; y++) {
@@ -28,7 +31,6 @@ function makeGrid() {
     pixelCanvas.innerHTML = table;
     // Add event to each cell of the grid table
     document.querySelectorAll('td').forEach(e => e.addEventListener("click", function () {
-        console.log("clicked");
         e.style.background = inputColor.value;
     }));
 }

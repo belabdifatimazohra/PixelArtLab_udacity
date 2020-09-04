@@ -15,15 +15,17 @@
         Grid Height:
         <input type="number" id="inputHeight" name="height" min="1" value="1"> Grid Width:
         <input type="number" id="inputWidth" name="width" min="1" value="1">
-        <input type="submit" >
+        <input type="submit">
     </form>
 
     <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
-
+    <div class="rounded">
+        <input type="color" id="colorPicker" value="#fa7d09">
+    </div>
     <h2>Design Canvas</h2>
-    <table id="pixelCanvas"></table>
-
+    <div id="canvas">
+        <table id="pixelCanvas"></table>
+    </div>
     <script src="designs.js"></script>
 </body>
 
